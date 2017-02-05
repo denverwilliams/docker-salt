@@ -6,6 +6,8 @@ services:
   - docker:dind
 
 build:
+  tags:
+    - iimac-docker
   stage: build
   script:
     - docker login -u "gitlab-ci-token" -p "$CI_BUILD_TOKEN" $CI_REGISTRY
