@@ -1,71 +1,71 @@
 openstack-keystone:
-  image: tcpcloud/keystone-server
+  image: tcpcloud/keystone-server:kilo
   net: host
   env_file: ./common.env
 
 openstack-glance-api:
-  image: tcpcloud/glance-server
+  image: tcpcloud/glance-server:kilo
   net: host
   command: api
   env_file: ./common.env
 
 openstack-glance-registry:
-  image: tcpcloud/glance-server
+  image: tcpcloud/glance-server:kilo
   net: host
   command: registry
   env_file: ./common.env
 
 openstack-cinder-api:
-  image: tcpcloud/cinder-controller
+  image: tcpcloud/cinder-controller:kilo
   net: host
   command: api
   env_file: ./common.env
 
 openstack-cinder-scheduler:
-  image: tcpcloud/cinder-controller
+  image: tcpcloud/cinder-controller:kilo
   net: host
   command: scheduler
   env_file: ./common.env
 
 openstack-nova-api:
-  image: tcpcloud/nova-controller
+  image: tcpcloud/nova-controller:kilo
   net: host
   command: api
   privileged: true
   env_file: ./common.env
 
 openstack-nova-scheduler:
-  image: tcpcloud/nova-controller
+  image: tcpcloud/nova-controller:kilo
   net: host
   command: scheduler
   env_file: ./common.env
 
 openstack-nova-conductor:
-  image: tcpcloud/nova-controller
+  image: tcpcloud/nova-controller:kilo
   net: host
   command: conductor
   env_file: ./common.env
 
 openstack-nova-cert:
-  image: tcpcloud/nova-controller
+  image: tcpcloud/nova-controller:kilo
   net: host
   command: cert
   env_file: ./common.env
 
 openstack-nova-consoleauth:
-  image: tcpcloud/nova-controller
+  image: tcpcloud/nova-controller:kilo
   net: host
   command: consoleauth
   env_file: ./common.env
 
 openstack-nova-novncproxy:
-  image: tcpcloud/nova-controller
+  image: tcpcloud/nova-controller:kilo
   net: host
   command: novncproxy
   env_file: ./common.env
 
 openstack-neutron-server:
-  image: tcpcloud/neutron-server
+  image: tcpcloud/neutron-server:kilo
   net: host
   command: server
   env_file: ./common.env

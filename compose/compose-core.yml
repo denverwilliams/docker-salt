@@ -1,10 +1,10 @@
 openstack-mysql:
-  image: tcpcloud/mysql-server
+  image: tcpcloud/mysql-server:kilo
   net: host
   env_file: ./common.env
 
 openstack-memcached01:
-  image: tcpcloud/memcached-server
+  image: tcpcloud/memcached-server:kilo
   net: host
   env_file: ./common.env
 
@@ -23,6 +23,6 @@ openstack-memcached01:
 #      - "11213:11211"
 
 rabbitmq-server:
-  image: tcpcloud/rabbitmq-server
+  image: tcpcloud/rabbitmq-server:kilo
   net: host
   env_file: ./common.env
