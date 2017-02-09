@@ -75,3 +75,9 @@ opencontrail-database:
   privileged: true
   net: host
   env_file: ./common.env
+
+openstack-horizon-server:
+  image: tcpcloud/horizon-server:liberty
+  privileged: true
+  net: host
+  env_file: ./common.env
