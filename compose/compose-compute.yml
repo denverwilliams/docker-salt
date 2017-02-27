@@ -6,6 +6,7 @@ libvirt:
     - /lib/modules:/lib/modules
     - /var/lib/libvirt/:/var/lib/libvirt
     - /sys/fs/cgroup:/sys/fs/cgroup:rw
+    #- /usr/lib/:/usr/lib
   net: host
 nova-compute:
   image: tcpcloud/nova-compute:kilo
